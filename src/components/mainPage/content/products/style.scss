@@ -1,0 +1,27 @@
+.products-container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 10px 20px;
+   height: 100%;
+   width: 80%;
+   background-color: rgb(244, 244, 244);
+}
+
+.way-products {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   padding: 10px;
+}
+
+.products-title {
+   width: 10%;
+   margin-bottom: 0;
+}
+
+.way {
+   width: 90%;
+   color: gray;
+}

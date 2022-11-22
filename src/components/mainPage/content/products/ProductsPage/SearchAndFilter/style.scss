@@ -1,0 +1,47 @@
+.serch-and-filter {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.input-search {
+   max-width: 150px;
+   transition: all 1s ease 0.5s;
+
+   &:focus {
+      max-width: 300px;
+      transition: all 1s ease 0s;
+   }
+}
+
+.select {
+   max-width: 150px;
+   margin-left: 15px;
+}
+
+.btn-added {
+   position: absolute;
+   width: 100px;
+   height: 100%;
+   top: 0;
+   right: 0;
+}
+
+.modal {
+   padding: 30px;
+}
+
+.title-modal {
+   color: teal;
+   text-transform: uppercase;
+}
+
+.modal-input {
+   min-width: 300px;
+   margin: 10px 0;
+}
+
+.modal-btn {
+   margin: 10px;
+}
