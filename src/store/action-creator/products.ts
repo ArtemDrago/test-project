@@ -1,4 +1,3 @@
-
 export interface ProductDataType {
    userId: number,
    id: number,
@@ -25,4 +24,6 @@ interface NewAddedProduct {
    type: ProductsActionTypes.ADDED_PRODUCT;
    payload: ProductDataType
 }
+
+
 

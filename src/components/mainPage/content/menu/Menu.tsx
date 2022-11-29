@@ -82,6 +82,12 @@ const Menu: React.FC<MenuProps> = ({ }) => {
             >
                Настройки
             </NavLink>
+            <NavLink
+               to={`/home/sistem/users`}
+               className='menu-link'
+            >
+               Пользователи
+            </NavLink>
          </div>
       </div>
    );

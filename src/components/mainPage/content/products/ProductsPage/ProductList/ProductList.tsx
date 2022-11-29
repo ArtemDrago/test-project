@@ -18,10 +18,10 @@ const ProductList: React.FC<ProductListProps> = ({ search, filter }) => {
    const pathParams = useParams()
    const { products } = useTypeSelector(state => state.products)
    const [list, setList] = useState(17)
-   const [data, load, error] = useRequest(fetchProducts, list)
+   const [folder, setFolder] = useState('todo')
+   const [data, load, error] = useRequest(fetchProducts, list, folder)
    const arr = useSearchAndFilter(products, filter, search)
    const arrUrl = Object.values(pathParams).join('')
-
 
    function fetchProducts() {
       return axios.get('https://jsonplaceholder.typicode.com/todos', {

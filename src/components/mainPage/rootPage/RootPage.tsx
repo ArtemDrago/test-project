@@ -1,10 +1,12 @@
-
 import { useMemo } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from '../../homePage/HomePage';
 import MainContent from '../content/MainContent';
+import Products from '../content/products/Products';
 import MainHeader from '../header/mainHeader/MainHeader';
-import UserPage from '../user/UserPage';
+import SettingPage from '../settingAndUsers/setting/SettingPage';
+import User from '../settingAndUsers/users/user/User';
+import Users from '../settingAndUsers/users/Users';
 import './style.scss'
 
 export const RootPage = ({ }) => {
@@ -32,15 +34,27 @@ export const RootPage = ({ }) => {
                   element={<HomePage />}
                />
                <Route
-                  path={`/home/:folder/:path/*`}
+                  path={`/`}
                   element={<MainContent />}
                >
+                  <Route
+                     path={`/home/main/:path/*`}
+                     element={<Products />}
+                  />
+                  <Route
+                     path={`/home/sistem/setting`}
+                     element={<SettingPage />}
+                  />
+                  <Route
+                     path={`/home/sistem/users`}
+                     element={<Users />}
+                  >
+                  </Route>
+                  <Route
+                     path={`/home/sistem/users/:id`}
+                     element={<User />}
+                  />
                </Route>
-               <Route
-                  path='/user'
-                  element={<UserPage
-                  />}
-               />
             </Route>
          </Routes>
       </div>

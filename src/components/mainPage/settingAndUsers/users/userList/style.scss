@@ -1,0 +1,41 @@
+.user-block {
+   padding: 10px 20px;
+   margin: 5px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-decoration: none;
+   color: teal;
+
+   &:hover {
+      background-color: rgba(0, 128, 128, 0.15);
+   }
+}
+
+.userlist-elem {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &:first-child {
+      width: 10%;
+   }
+
+   &:last-child {
+      width: 20%;
+      overflow: auto;
+   }
+
+   &:nth-child(2) {
+      width: 40%;
+
+      &:hover {
+         color: blue;
+         cursor: pointer;
+      }
+   }
+
+   &:nth-child(3) {
+      width: 30%;
+   }
+}

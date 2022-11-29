@@ -1,0 +1,24 @@
+.settings-container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+   height: 100%;
+   width: 80%;
+   background-color: rgb(244, 244, 244);
+}
+
+.way-setting {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 10px;
+   height: 97.5%;
+   background-color: #fff;
+}
+
+.set-title {
+   color: teal;
+   margin: 15px 0;
+   font-size: 26px;
+}

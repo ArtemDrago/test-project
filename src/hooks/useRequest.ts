@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { ProductDataType } from "../store/action-creator/products";
 import { addProductsAction } from "../store/redusers/productsReduser";
 
-export default function (request: any, list: number): [ProductDataType[], boolean, any] {
+export default function (request: any, list: number, folder: string): [ProductDataType[], boolean, any] {
    const [data, setData] = React.useState<ProductDataType[]>([])
    const [load, setLoad] = useState(false)
    const [error, setError] = useState('')
@@ -22,9 +22,11 @@ export default function (request: any, list: number): [ProductDataType[], boolea
    }, [list])
 
    useEffect(() => {
-      dispatch(addProductsAction(
-         data
-      ))
+      if (folder == 'todo') {
+         dispatch(addProductsAction(
+            data
+         ))
+      }
    }, [data])
 
    return [data, load, error]

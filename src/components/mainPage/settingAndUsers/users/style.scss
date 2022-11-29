@@ -1,0 +1,28 @@
+.users-container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+   height: 100%;
+   width: 80%;
+   background-color: rgb(244, 244, 244);
+}
+
+.way-users {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 10px;
+   height: 97.5%;
+   background-color: #fff;
+   overflow: auto;
+}
+
+.set-title {
+   text-align: center;
+   width: 100%;
+   height: 60px;
+   color: teal;
+   margin: 15px 0;
+   font-size: 26px;
+}

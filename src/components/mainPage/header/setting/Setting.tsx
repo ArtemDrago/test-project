@@ -3,24 +3,20 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './style.scss'
 
-interface SettingProps {
-
-}
+interface SettingProps { }
 
 const Setting: React.FC<SettingProps> = () => {
    return (
       <div className='setting-container'>
          <Button>
-            <Link
-               className='link'
-               to={'/user'}
-            >
-               Menu
-            </Link>
+            Menu
          </Button>
-         <Button>
+         <Link
+            className='btn-set'
+            to={`/home/sistem/setting`}
+         >
             Setting
-         </Button>
+         </Link>
       </div>
    );
 }

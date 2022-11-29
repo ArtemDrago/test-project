@@ -6,3 +6,22 @@
    align-items: center;
    justify-content: space-between;
 }
+
+.btn-set {
+   text-decoration: none;
+   width: 80px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: teal;
+   color: white;
+   border-radius: 8px;
+
+
+   &:hover {
+      color: teal;
+      background-color: rgba(0, 128, 128, 0.15);
+      border: 1px solid teal;
+   }
+}

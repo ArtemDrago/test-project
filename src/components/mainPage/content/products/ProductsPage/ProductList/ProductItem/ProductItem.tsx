@@ -7,7 +7,7 @@ interface ProductItemProps {
 }
 
 const ProductItem: React.FC<ProductItemProps> = ({ productList }) => {
-   console.log(productList)
+
    return (
       <>
          {productList.map((elem: ProductDataType, ind: number) =>

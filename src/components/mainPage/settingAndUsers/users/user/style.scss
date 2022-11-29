@@ -1,0 +1,31 @@
+.user-info-box {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+   height: 100%;
+   width: 80%;
+   background-color: rgb(244, 244, 244);
+}
+
+.way-user-info {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 10px;
+   height: 97.5%;
+   background-color: #fff;
+   overflow: auto;
+}
+
+.btn-go-back {
+   width: 110px;
+}
+
+.btn-box {
+   padding: 10px;
+   margin-bottom: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}

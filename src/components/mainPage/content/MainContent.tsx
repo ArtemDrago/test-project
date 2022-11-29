@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Outlet } from 'react-router-dom';
 import Menu from './menu/Menu';
 import Products from './products/Products';
 import './style.scss'
@@ -10,7 +11,7 @@ const MainContent: React.FC<MainContentProps> = ({ }) => {
    return (
       <section className='content-container'>
          <Menu />
-         <Products />
+         <Outlet />
       </section>
    );
 }

@@ -1,6 +1,5 @@
 import { ProductAction, ProductDataType, ProductsActionTypes, ProductsTypeData } from "../action-creator/products"
 
-
 export const initialState: ProductsTypeData = {
    products: []
 }
